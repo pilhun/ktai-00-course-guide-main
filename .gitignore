@@ -1,0 +1,27 @@
+# 기존 로컬 가상환경이 실습 파일과 함께 올라가지 않도록 제외
+.venv/
+
+# Python 실행 중 생기는 캐시
+__pycache__/
+*.py[cod]
+
+# 개인 설정과 키 파일. 값이 없는 예제 파일은 공유 가능
+.env
+.env.*
+!.env.example
+
+# JSON 저장 실습이 생성하는 개인 파일
+python-basics/07-json-and-files/practice-roundtrip.json
+python-basics/labs/07-json-storage/practice-questions.json
+python-basics/labs/08-helpdesk-app/practice-helpdesk.json
+
+# Windows와 macOS가 자동 생성하는 파일
+Thumbs.db
+Desktop.ini
+.DS_Store
+._*
+
+# 기초 파일 저장 실습의 생성 결과 (제공된 예제 자료는 포함)
+python-basics/07-json-and-files/practice-note.txt
+python-basics/labs/07-file-storage/practice-note.txt
+python-basics/labs/07-file-storage/practice-questions.json
