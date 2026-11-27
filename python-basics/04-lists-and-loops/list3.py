@@ -29,14 +29,38 @@
 # print("홀수의 합 :", total)
 
 
-# 짝수들의 합을 구해서 출력하시오
+# 짝수들의 합을 구해서 출력하시오 (even_total)
+
+# num_list = list(range(1, 101))
+
+# even_total = 0
+# for num in num_list:
+#     if num % 2 == 0:
+#         even_total = even_total + num
+
+# print("짝수의 합 :", even_total)
+
+# 짝수들의 합을 구해서 출력하시오 (odd_sum)
+
+# num_list = list(range(1, 101))
+
+# odd_sum = 0
+# for num in num_list:
+#     if num % 2 == 0:
+#         odd_sum = odd_sum + num
+
+# print("짝수의 합 :", odd_sum)
+
+odd_sum = 0
+even_sum = 0
 
 num_list = list(range(1, 101))
 
-even_total = 0
 for num in num_list:
-    if num % 2 == 0:
-        even_total = even_total + num
+    if num % 2 == 1:
+        odd_sum = odd_sum + num
+    else:
+        even_sum = even_sum + num
 
-print("짝수의 합 :", even_total)
-
+print(odd_sum)
+print(even_sum)
